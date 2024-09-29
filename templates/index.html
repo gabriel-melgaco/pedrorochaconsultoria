@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pedro Rocha Bio</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href=" {{ url_for('static', filename = 'img/favicon.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename = 'img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{{ url_for('static', filename = 'lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{{ url_for('static', filename = 'lib/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'lib/animate/animate.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{{ url_for('static', filename = 'css/style.css') }}" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: DevFolio
+    Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body id="page-top">
+
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top"><i class="fa-solid fa-money-bill-trend-up fa-2x"></i></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#service">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#avaliation">Avaliações</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">Contate-nos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Skew Star /-->
+  <div id="home" class="intro route bg-image"
+    style="background-image: url('{{ url_for('static', filename='img/intro-bg.jpg') }}')">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="intro-title mb-4">Olá, eu sou Pedro Rocha</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">Especialista em Investimentos CEA®-Anbima, Consultor
+              Autorizado CVM, Simplifico suas Finanças</span><strong class="text-slider"></strong></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Saiba mais</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro SOBRE MIM /-->
+
+  <section id="about" class="about-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="{{ url_for('static', filename ='img/testimonial-2.jpg') }}"
+                        class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Nome: </span> <span>Pedro Rocha Bonifácio</span></p>
+                      <p><span class="title-s">Perfil: </span> <span>Analista de Investimentos</span></p>
+                      <p><span class="title-s">Email: </span> <span>pedro.rocha@example.com</span></p>
+                      <p><span class="title-s">Telefone: </span> <span>(12) 98557-0089</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-mf">
+                  <p class="title-s">Carteiras Diversificadas</p>
+                  <span>Renda Fixa</span> <span class="pull-right">85%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span>Ações</span> <span class="pull-right">75%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>Stocks</span> <span class="pull-right">50%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>Fundos Imobiliários</span> <span class="pull-right">90%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Quem sou eu?
+                    </h5>
+                  </div>
+                  <p class="lead">
+                    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
+                    imperdiet et, porttitor
+                    at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
+                    porttitor accumsan tincidunt.
+                  </p>
+                  <p class="lead">
+                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
+                    porttitor volutpat. Vestibulum
+                    ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
+                  </p>
+                  <p class="lead">
+                    Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                    Nulla porttitor accumsan
+                    tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                  </p>
+                  <img src="{{ url_for('static', filename = 'img/certificacao.png') }}" width="500x800" alt=""
+                  class="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+  </section>
+
+  <!--/ Section NOSSOS SERVIÇOS /-->
+  <section id="service" class="services-mf route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Nossos Serviços
+            </h3>
+            <p class="subtitle-a">
+              E o que você vai receber com nossos serviços?
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Diagnóstico</h2>
+              <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="fa-solid fa-pen"></i></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Planejamento Financeiro</h2>
+              <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="fa-brands fa-bitcoin"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Oportunidade</h2>
+              <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="fa-solid fa-arrows-to-circle"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Direcionamento</h2>
+              <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="fa-solid fa-arrow-trend-up"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Resultados</h2>
+              <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="fa-solid fa-address-book"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Exclusividade</h2>
+              <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--/ Section Testimonials Star /-->
+  <section id="avaliation">
+    <div class="testimonials paralax-mf bg-image"
+      style="background-image: url('{{ url_for('static', filename='img/overlay-bg.jpg') }}')">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="testimonial-mf" class="owl-carousel owl-theme">
+              <div class="testimonial-box">
+                <div class="author-test">
+                  <h3 class="author"> Conheça quem já mudou sua vida financeira com nossa assessoria!</h3>
+                  <img src="{{ url_for('static', filename = 'img/testimonial-4.jpg') }}" alt=""
+                    class="rounded-circle b-shadow-a">
+                  <span class="author">Alef Barbosa</span>
+                </div>
+                <div class="content-test">
+                  <p class="description lead">
+                    Foi uma das melhores decisões que tomei para minha vida financeira. Seu conhecimento profundo do
+                    mercado financeiro e sua capacidade de traduzir números em estratégias claras e viáveis me ajudaram
+                    a alcançar resultados extraordinários.
+                  </p>
+                  <span class="comit"><i class="fa fa-quote-right"></i></span>
+                </div>
+              </div>
+              <div class="testimonial-box">
+                <div class="author-test">
+                  <h3 class="author"> Conheça quem já mudou sua vida financeira com nossa assessoria!</h3>
+                  <img src="{{ url_for('static', filename = 'img/testimonial-1.jpg') }}" alt=""
+                    class="rounded-circle b-shadow-a">
+                  <span class="author">Gabriel Melgaço</span>
+                </div>
+                <div class="content-test">
+                  <p class="description lead">
+                    Seu compromisso com a transparência e a ética em cada decisão foi algo que me trouxe muita
+                    confiança. Recomendo altamente os serviços do Pedro Rocha para quem busca uma gestão financeira de
+                    alto nível.
+                  </p>
+                  <span class="comit"><i class="fa fa-quote-right"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route"
+    style="background-image: url('{{ url_for('static', filename='img/overlay-bg-2.jpg') }}')">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="contact-mf">
+            <div id="contact" class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Agende sua reunião agora:
+                    </h5>
+                  </div>
+                  <div>
+                    <form action="" method="post" role="form" class="contactForm">
+                      <div id="sendmessage">Your message has been sent. Thank you!</div>
+                      <div id="errormessage"></div>
+                      <div class="row">
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome*"
+                              data-rule="minlen:4" data-msg="Precisamos de pelo menos 4 caracteres" />
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Seu e-mail*"
+                              data-rule="email" data-msg="Por favor, insira um e-mail válido" />
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="phone" class="form-control" name="telefone" id="telefone"
+                              placeholder="(DD)Telefone*" data-rule="minlen:4"
+                              data-msg="Por favor, insira um telefone válido" />
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5"
+                              data-msg="Nos conte algo que achar necessário"
+                              placeholder="Nos conte algo que achar necessário"></textarea>
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <button type="submit" class="button button-a button-big button-rouded">Agendar</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="title-box-2 pt-4 pt-md-0">
+                    <h5 class="title-left">
+                      Contate-nos
+                    </h5>
+                  </div>
+                  <div class="more-info">
+                    <p class="lead">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
+                      expedita aperiam aliquid at.
+                      Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
+                      mollitia inventore?
+                    </p>
+                    <ul class="list-ico">
+                      <li><span class="ion-ios-location"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
+                      <li><span class="ion-ios-telephone"></span> (617) 557-0089</li>
+                      <li><span class="ion-email"></span> contact@example.com</li>
+                    </ul>
+                  </div>
+                  <div class="socials">
+                    <ul>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+              <div class="credits">
+                <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+                -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <a class="whatsapp-link" href="https://wa.me/5512982203228?text=Tenho%20interesse%20em%20conhecer%20sua%20assessoria" target="_blank"><i class="fa-brands fa-square-whatsapp fa-beat fa-2x"></i></a>
+
+
+  <!-- JavaScript Libraries -->
+  <script src="{{ url_for('static', filename ='lib/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'lib/jquery/jquery-migrate.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'lib/popper/popper.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'lib/bootstrap/js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'lib/easing/easing.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'lib/counterup/jquery.waypoints.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'lib/counterup/jquery.counterup.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'lib/owlcarousel/owl.carousel.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'lib/lightbox/js/lightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'lib/typed/typed.min.js') }}"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="{{ url_for('static', filename = 'contactform/contactform.js') }}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{{ url_for('static', filename = 'js/main.js') }}"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/9cf3f4ac1c.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
