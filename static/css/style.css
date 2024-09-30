@@ -32,6 +32,12 @@ h6 {
   margin-right: 10px;
 }
 
+.centraliza_texto{
+
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
+}
+
 .whatsapp-link {
   position: fixed;
   width: 60px;
@@ -199,8 +205,12 @@ a:hover {
 }
 
 .title-left {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;
   font-size: 2rem;
   position: relative;
+  font-weight: bold;
 }
 
 .title-left:before {
@@ -1175,6 +1185,7 @@ footer .credits a {
   border: 1px solid transparent;
   transition: all 500ms ease;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .button:focus {
