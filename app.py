@@ -58,7 +58,7 @@ def registrar():
     mail_message = Message(
         subject="Confirmação de Registro",
         sender=app.config['MAIL_USERNAME'],  # Utilize a configuração do seu aplicativo
-        recipients=[email],  # Enviar e-mail para o usuário que preencheu o formulário
+        recipients=['pedrorochabconsultoria@gmail.com'],  # Enviar e-mail
         body=f"""
             Confirmação de Registro
             O usuário, {nome}, acabou de se registrar em seu site!
