@@ -32,10 +32,28 @@ h6 {
   margin-right: 10px;
 }
 
+.top-banner {
+  background-color: red;       /* Cor de fundo vermelho */
+  color: white;                /* Cor do texto em branco */
+  text-align: center;          /* Centralizar o texto */
+  padding: 5px 0;             /* Espaçamento em torno do texto */
+  font-size: 1rem;           /* Tamanho da fonte */
+  font-weight: bold;           /* Negrito para o texto */
+  position: fixed;             /* Fixa no topo da página */
+  top: 0;                      /* Localiza no topo */
+  width: 100%;                 /* Largura completa da tela */
+  z-index: 1000;               /* Garante que fique na frente dos outros elementos */
+}
+
+
 .centraliza_texto{
 
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center;     /* Centraliza verticalmente */
+  text-align: center; /* Centraliza o conteúdo da div, incluindo o botão */
+}
+
+.align_button{
+  margin: 0 auto;
+  display: block;
 }
 
 .whatsapp-link {
