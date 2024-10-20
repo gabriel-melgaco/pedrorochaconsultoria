@@ -1,4 +1,4 @@
-# Flask App com Registro de Clientes e Envio de E-mail
+# BIO Pessoal: Flask App com Registro de Clientes e Envio de E-mail
 
 Este projeto é uma aplicação Flask que permite registrar clientes em um banco de dados SQLite, gerar uma planilha Excel com as informações registradas, e enviar essa planilha por e-mail automaticamente para um destinatário específico. O envio do e-mail é feito utilizando o Flask-Mail, e as informações de configuração (como login e senha) são gerenciadas por variáveis de ambiente.
 
