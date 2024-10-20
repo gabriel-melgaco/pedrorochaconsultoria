@@ -4,19 +4,22 @@ from datetime import datetime
 from flask_mail import Mail, Message
 import pandas as pd
 from io import BytesIO
+from dotenv import load_dotenv
+import os
 
 
 
 db = SqliteDatabase('dados.db')
-
+load_dotenv()
+secret_key = os.getenv('SECRET_KEY')
 
 app = Flask(__name__)
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USE_TLS'] = False  # Deve ser False para o port 465
 app.config['MAIL_USE_SSL'] = True   # Deve ser True para o port 465
-app.config['MAIL_USERNAME'] = '' #colocar login e senha
-app.config['MAIL_PASSWORD'] = '' #colocar login e senha
+app.config['MAIL_USERNAME'] = 'megdev99@gmail.com' #colocar login e senha
+app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
 app.config['MAIL_PASSWORD'] = 'lnxi sbiv dnrp hyym'
 
 
@@ -72,7 +75,7 @@ def registrar():
     mail_message = Message(
         subject="Confirmação de Registro",
         sender=app.config['MAIL_USERNAME'],  # Utilize a configuração do seu aplicativo
-        recipients=['pedrorochabconsultoria@gmail.com'],  # Enviar e-mail
+        recipients=['gabrielmelgacom@gmail.com'],  # Enviar e-mail
         body=f"""
             Confirmação de Registro
             O usuário, {nome}, acabou de se registrar em seu site!
