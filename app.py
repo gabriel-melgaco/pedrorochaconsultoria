@@ -15,8 +15,8 @@ app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USE_TLS'] = False  # Deve ser False para o port 465
 app.config['MAIL_USE_SSL'] = True   # Deve ser True para o port 465
-app.config['MAIL_USERNAME'] = ''
-app.config['MAIL_PASSWORD'] = ''
+app.config['MAIL_USERNAME'] = 'megdev99@gmail.com'
+app.config['MAIL_PASSWORD'] = '@13985261776Gm'
 app.config['MAIL_PASSWORD'] = 'lnxi sbiv dnrp hyym'
 
 
