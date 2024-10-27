@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, jsonify, send_from_directory
 from peewee import *
 from datetime import datetime
 from flask_mail import Mail, Message
@@ -18,9 +18,15 @@ app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USE_TLS'] = False  # Deve ser False para o port 465
 app.config['MAIL_USE_SSL'] = True   # Deve ser True para o port 465
-app.config['MAIL_USERNAME'] = 'megdev99@gmail.com' #colocar login e senha
+
+#CONFIGURAR VIRTUAL ENV QUANDO FOR HOSPEDAR NA WEB
+app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
 app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
-app.config['MAIL_PASSWORD'] = 'lnxi sbiv dnrp hyym'
+app.config['MAIL_PASSWORD'] = os.getenv('MAIL_TOKEN')
+app.config['DATABASE_PASSWORD'] = os.getenv('DATABASE_PASSWORD')
+
+UPLOAD_FOLDER = os.path.dirname(os.path.abspath(__file__))
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
 mail = Mail(app)
@@ -40,6 +46,10 @@ db.create_tables([Clientes])
 @app.route("/")
 def home():
     return render_template('index.html')
+
+@app.route("/database")
+def database():
+    return render_template('database.html')
 
 @app.route("/register", methods=['POST'])
 def registrar():
@@ -97,6 +107,20 @@ def registrar():
 
     # Redirecionar após o registro
     return redirect(f'https://calendly.com/pedrorochabconsultoria/consultoriaexpress')
+
+
+@app.route("/download_database", methods=['POST'])
+def download_database():
+    data = request.get_json()
+    password = data.get('password')
+    print(password)
+
+    if password == app.config.get('DATABASE_PASSWORD'):
+        filename = 'dados.db'
+        return send_from_directory(app.config['UPLOAD_FOLDER'], filename, as_attachment=True)
+    else:
+        return jsonify({'status': 'error', 'message': 'Senha incorreta ou arquivo não encontrado!'}), 403
+
 
 if __name__ == '__main__':
     app.run(debug=True)
