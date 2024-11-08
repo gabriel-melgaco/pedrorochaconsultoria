@@ -45,6 +45,18 @@ h6 {
   z-index: 1000;               /* Garante que fique na frente dos outros elementos */
 }
 
+.div-com-sombra {
+  box-shadow: 10px 10px 50px rgba(25, 11, 226, 0.3); /* sombra preta com transparência */
+}
+
+.lottie-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; /* Ajuste conforme necessário */
+  height: 100px; /* Ajuste conforme necessário */
+  z-index:2000;
+}
 
 .centraliza_texto{
 
@@ -142,7 +154,7 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #070707;
+  background-color: #050505;
 }
 
 .overlay-mf {
@@ -1113,6 +1125,7 @@ a:hover {
   color: #fff;
 }
 
+
 /*======================================
 //--//-->   CONTACT
 ======================================*/
@@ -1122,7 +1135,7 @@ a:hover {
 }
 
 .contact-mf {
-  margin-top: 4rem;
+  margin-top: 0rem;
 }
 
 /*======================================
@@ -1204,7 +1217,29 @@ footer .credits a {
   transition: all 500ms ease;
   cursor: pointer;
   font-weight: bold;
+  
 }
+
+.piscando {
+  animation: sonar 1s infinite;
+}
+
+/* Animação para fazer o botão piscar */
+@keyframes sonar {
+  0% {
+      opacity: 1;
+      transform: scale(1);
+  }
+  50% {
+      opacity: 0.5;
+      transform: scale(1.025);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
 
 .button:focus {
   outline: 0;
